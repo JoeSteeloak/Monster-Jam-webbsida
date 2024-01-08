@@ -19,6 +19,7 @@ footer {
 h1 {
     font-size: 2.5rem;
     margin-top: 80px;
+    text-align: center;
 }
 
 h2 {
@@ -79,6 +80,26 @@ header {
     display: none;
 }
 
+
+#banner{
+    padding: 0;
+    width: 100vw;
+    max-width: none;
+}
+
+section img {
+    border: 1px solid black;
+    display: inline-block;
+    margin: 0 5%;
+    width: 20%;
+    
+}
+
+section {
+    text-align: center;
+}
+
+ /* mobile */
 @media screen and (max-width: 1200px) {
 
 
@@ -185,8 +206,14 @@ header {
         font-size: 24px;
         font-family: "DIN Condensed Web", sans-serif;
     }
+
+    #banner {
+        padding-top: 20%;
+    }
 }
 
+
+ /* desktop */
 @media screen and (min-width: 1201px) {
         /* designa navbaren*/
         nav a {
@@ -213,5 +240,10 @@ header {
             padding: 15px;
             margin: 0px auto 0px auto;
             text-align: center;
+        }
+
+        nav a:hover {
+            background-color: black;
+            color: #FFC800;
         }
 }
