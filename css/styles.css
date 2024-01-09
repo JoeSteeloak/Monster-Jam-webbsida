@@ -141,6 +141,10 @@ section {
     line-height: 50px;
 }
 
+#hidden {
+    display: none;
+}
+
 /* mobile */
 @media screen and (max-width: 1200px) {
 
