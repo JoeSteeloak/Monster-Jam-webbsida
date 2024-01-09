@@ -353,4 +353,8 @@ p {
     #banner {
         padding-top: 10%;
     }
+
+    .product-page-img {
+        margin: 0;
+    }
 }
