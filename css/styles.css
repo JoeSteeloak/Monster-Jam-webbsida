@@ -231,7 +231,7 @@ section {
         width: 80vw;
     }
 
-    img {
+    .product-page-img {
         margin: 5%;
         padding-top: 30%;
         max-width: 90vw;
