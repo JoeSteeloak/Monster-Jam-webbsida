@@ -68,7 +68,31 @@ header {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
+article p, article h2{
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
 
+article p {
+    padding: 0 5%;
+}
+article h1 {
+    padding-bottom: 0;
+}
+
+article ul {
+    display: inline-block;
+    text-align: left;
+}
+
+article {
+    text-align: center;
+}
+
+article li {
+    font-size: 24px;
+}
 
 #logo {
     max-height: 150px;
