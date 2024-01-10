@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Monster Jam</title>
+    <title>Start - Monster Jam</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://db.onlinewebfonts.com/c/69dbc1186412d7831b88d8a78a360360?family=DIN+Condensed+Web"
@@ -51,39 +51,49 @@
                 <img src="images/banner.png" alt="banner" id="banner">
             </picture>
         </div>
-        <section>
-            <h1>Våra produkter</h1>
-            <a href="products/calavera.html">
-                <picture>
-                    <source srcset="images/calavera.webp" type="image/webp">
-                    <img src="images/calavera.jpg" alt="Calavera Monster Truck Toy">
-                </picture>
-            </a>
-            <a href="products/earthshaker.html">
-                <picture>
-                    <source srcset="images/earthshaker.webp" type="image/webp">
-                    <img src="images/earthshaker.jpg" alt="Earthshaker Monster Truck Toy">
-                </picture>
-            </a>
-            <a href="products/gravedigger.html">
-                <picture>
-                    <source srcset="images/gravedigger.webp" type="image/webp">
-                    <img src="images/gravedigger.jpg" alt="Grave Digger Monster Truck Toy">
-                </picture>
-            </a>
-            <a href="products/sunnova.html">
-                <picture>
-                    <source srcset="images/sunnova.webp" type="image/webp">
-                    <img src="images/sunnova.jpg" alt="Son-uva Digger Monster Truck Toy">
-                </picture>
-            </a>
-            <a href="products/toroloco.html">
-                <picture>
-                    <source srcset="images/toroloco.webp" type="image/webp">
-                    <img src="images/toroloco.jpg" alt="Toro Loco Monster Truck Toy">
-                </picture>
-            </a>
-        </section>
+        <h1 class="rubrik-produktsidor">Kassa</h1>
+        <table>
+            <thead>
+                <tr>
+                    <td>Bild</td>
+                    <td>Artikelnr</td>
+                    <td>Varunamn</td>
+                    <td>Antal</td>
+                    <td>Pris</td>
+                </tr>
+            </thead>
+            <tbody id="checkout"></tbody>
+        </table>
+
+        <button class="checkoutbtn" onclick="emptyBasket()">Töm varukorgen</button>
+       
+
+            <form class="form-container">
+
+                <h2>Dina uppgifter:</h2>
+                
+                <div class="form-group">
+                    <label for="fullname">Namn:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ange ditt namn">
+                </div>
+            
+                <div class="form-group">
+                    <label for="address">Adress:</label>
+                    <input type="text" id="address" name="address" placeholder="Ange din adress">
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">E-postadress:</label>
+                    <input type="email" id="email" name="email" placeholder="Ange din e-postadress">
+                </div>
+            
+                <div class="form-group">
+                    <label for="phone">Mobilnummer:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ange ditt mobilnummer">
+                </div>
+
+                <button id="slutforbtn" class="checkoutbtn" onclick="checkoutBasket()">Slutför köp</button>
+            </form>
     </main>
     <footer>
         <p>Copyright &copy; 2024 Jonas Ståleker</p>

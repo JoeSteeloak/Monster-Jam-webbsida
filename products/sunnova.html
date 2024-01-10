@@ -14,6 +14,7 @@
     <script src="../js/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"
         defer></script>
+        <script defer src="../js/webshop.js"></script>
 </head>
 
 <body>
@@ -42,6 +43,7 @@
                 <li><a href="../index.html">START</a></li>
                 <li><a href="../shop.html">SHOP</a></li>
                 <li><a href="../about.html">OM OSS</a></li>
+                <li><a href="../basket.html">KASSA</a></li>
             </ul>
         </nav>
     </header>
@@ -57,7 +59,7 @@
             <div class="grid-item2">
                 <h1>MONSTER TRUCK - SON-UVA DIGGER</h1>
                 <h1>150 kr</h1>
-                <div class="buy-btn">KÖP</div>
+                <button class="buybtn" onclick="addToBasket(this, '004', 'Son-uva Digger', 150, '../images/sunnova.jpg', true)">KÖP</button>
                 <h2>Produktinfo</h2>
                 <p>Vi presenterar den helt nya officiella formgjutna Monster Jam-monstertrucken
                     i skala 1:64! Denna slimmade, grymma Monster Jam-maskin har fler detaljer
