@@ -477,3 +477,15 @@ input {
 .buybtn:hover {
     background-color: #c49a05;
 }
+
+#notify {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    bottom: 0; left: 0;
+    background-color: #FFC800;
+    text-align: center;
+    transition: height 1s;
+}
+
+#notify.visible { height: 60px;}
