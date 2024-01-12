@@ -307,6 +307,11 @@ p {
         padding: 5px 25px;
     }
 
+    nav a.current {
+        color: #FFC800;
+        background-color: black;
+    }
+
     nav li {
         margin-top: 10px;
         list-style-type: none;
